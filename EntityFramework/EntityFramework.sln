@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Session1", "Session1\Session1.csproj", "{0F6A8252-9BBF-43E2-925A-270A9F70C395}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session1", "Session1\Session1.csproj", "{0F6A8252-9BBF-43E2-925A-270A9F70C395}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentAPI", "FluentAPI\FluentAPI.csproj", "{8FF790B5-885D-4AFB-8C71-933AA95CE0EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migration", "Migration\Migration.csproj", "{83EA8CD8-CB1E-4323-81C4-65524E81B261}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{0F6A8252-9BBF-43E2-925A-270A9F70C395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F6A8252-9BBF-43E2-925A-270A9F70C395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F6A8252-9BBF-43E2-925A-270A9F70C395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FF790B5-885D-4AFB-8C71-933AA95CE0EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF790B5-885D-4AFB-8C71-933AA95CE0EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF790B5-885D-4AFB-8C71-933AA95CE0EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF790B5-885D-4AFB-8C71-933AA95CE0EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83EA8CD8-CB1E-4323-81C4-65524E81B261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83EA8CD8-CB1E-4323-81C4-65524E81B261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83EA8CD8-CB1E-4323-81C4-65524E81B261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83EA8CD8-CB1E-4323-81C4-65524E81B261}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Session1.Entities
+namespace FluentAPI.Entities
 {
     [Table("Product")]
     public class Product

@@ -5,7 +5,7 @@ using Session1.Entities;
 
 namespace Session1
 {
-    internal class Program
+    internal class HandleProductV1
     {
         static void CreateDatabase()
         {
@@ -124,12 +124,12 @@ namespace Session1
             //entity framework không code sql mà dùng linq để lấy data
             //logging sẽ giúp chúng ta in ra câu lệnh sql mà entity framework thực thi
         }
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
-            //CreateDatabase();
-            //DropDatabase();
+            DropDatabase();
+            CreateDatabase();
             //InsertProduct();
-            InsertRange();
+            //InsertRange();
         }
     }
 }
