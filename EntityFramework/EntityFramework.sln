@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Session1", "Session1\Sessio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentAPI", "FluentAPI\FluentAPI.csproj", "{8FF790B5-885D-4AFB-8C71-933AA95CE0EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migration", "Migration\Migration.csproj", "{83EA8CD8-CB1E-4323-81C4-65524E81B261}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationPractice", "Migration\MigrationPractice.csproj", "{83EA8CD8-CB1E-4323-81C4-65524E81B261}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

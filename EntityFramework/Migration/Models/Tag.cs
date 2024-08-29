@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Migration.Models
+namespace MigrationPractice.Models
 {
     public class Tag
     {

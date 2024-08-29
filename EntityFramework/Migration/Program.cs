@@ -1,4 +1,4 @@
-﻿namespace Migration
+﻿namespace MigrationPractice
 {
     internal class Program
     {

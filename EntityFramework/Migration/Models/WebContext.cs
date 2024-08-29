@@ -2,14 +2,14 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Migration.Models
+namespace MigrationPractice.Models
 {
     public class WebContext : DbContext
     {
         public DbSet<Article> Articles { get; set; }
         public DbSet<Tag> Tags { get; set; }
 
-        private string _connectionString = @"Data Source=localhost,1433;Initial Catalog=WebDb;uid=sa;password=sa123456";
+        private string _connectionString = @"Data Source=localhost,1433;Initial Catalog=WebDb;uid=sa;password=sa123456;TrustServerCertificate=True";
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

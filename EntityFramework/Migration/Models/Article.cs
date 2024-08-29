@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Migration.Models
+namespace MigrationPractice.Models
 {
     public class Article
     {
@@ -8,6 +8,6 @@ namespace Migration.Models
         public int ArticleId { set; get; }
 
         [StringLength(100)]
-        public string Title { set; get; }
+        public string Name { set; get; }
     }
 }
