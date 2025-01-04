@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
 
 namespace DependencyInjection
 {
+
     internal class IOptionConfig
     {
+        static void Main(string[] args)
+        {
+            var services = new ServiceCollection();
+
+            services.AddSingleton
+        }
     }
 }

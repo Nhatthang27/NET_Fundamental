@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run NFind",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/NFind/bin/Debug/net8.0/NFind.dll",
+            "args": [
+                "LAFEU",
+                "./"
+            ],
+            "cwd": "${workspaceFolder}/NFind",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        }
+    ]
+}
