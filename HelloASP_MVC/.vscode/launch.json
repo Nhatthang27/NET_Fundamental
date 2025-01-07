@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "coreclr", // Sử dụng CoreCLR cho ứng dụng .NET Core
+            "request": "launch",
+            "name": "Launch ASP.NET Core (Kestrel)", // Tên cấu hình
+            "preLaunchTask": "build", // Task build ứng dụng trước khi chạy
+            "program": "${workspaceFolder}/bin/Debug/net8.0/HelloASP_MVC.dll", // Đường dẫn tới file DLL ứng dụng
+            "args": [], // Tham số truyền vào ứng dụng (nếu có)
+            "cwd": "${workspaceFolder}", // Thư mục làm việc hiện tại
+            "stopAtEntry": false, // Không dừng tại entry point
+            "serverReadyAction": {
+                "action": "openExternally", // Mở trình duyệt tự động
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)", // Regex để nhận URL ứng dụng
+                "uriFormat": "%s" // Sử dụng URL được nhận dạng
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development" // Thiết lập môi trường Development
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views" // Ánh xạ thư mục Views (nếu cần)
+            }
+        },
+        {
+            "type": "chrome", // Sử dụng Chrome để debug ứng dụng web
+            "request": "launch",
+            "name": "Launch Chrome against localhost", // Tên cấu hình
+            "url": "https://localhost:7000", // URL ứng dụng ASP.NET Core
+            "webRoot": "${workspaceFolder}" // Thư mục gốc ứng dụng
+        }
+    ]
+}
