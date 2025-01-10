@@ -1,0 +1,28 @@
+﻿@model TodoList.Models.TodoListViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">To do</h1>
+    <ul>
+        @foreach (var item in Model.Items)
+        {
+            <div style="display: flex; justify-content: space-between;">
+                <li style="text-decoration:@(item.IsDone ? "line-through" : "none");">@item.Content </li>
+
+                <form asp-action="MarkDoneItem" method="post" style="display:inline;">
+                    <input type="hidden" name="id" value="@(item.Id)" />
+                    <button type="submit">@(item.IsDone ? "Mark Undone" : "Mark Done")</button>
+                </form>
+
+                <li>Id: @item.Id</li>
+            </div>
+        }
+    </ul>
+    <form asp-action="AddItem" method="post">
+        <input type="text" name="content" />
+        <button type="submit">Add</button>
+    </form>
+</div>
