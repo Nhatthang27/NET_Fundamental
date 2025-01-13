@@ -15,7 +15,7 @@ public class HomeController : Controller
     {
         var session = HttpContext.GetSession();
 
-        session.SetString("Name", "Tom");
+        session.SetString("Name", session.Id);
         await session.CommitAsync();
 
         return View();
@@ -24,9 +24,8 @@ public class HomeController : Controller
     public async Task<IActionResult> PrivacyAsync()
     {
         var session = HttpContext.GetSession();
-        await session.LoadAsync();
+        // await session.LoadAsync();
         var name = session.GetString("Name");
-
         return View("Privacy", name);
     }
 

@@ -17,7 +17,6 @@ namespace MySession.MySession
                 return true;
             }
         }
-
         public string Id => id;
 
         public IEnumerable<string> Keys => _store.Keys;
