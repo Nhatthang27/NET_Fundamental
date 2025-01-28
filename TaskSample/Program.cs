@@ -26,9 +26,12 @@ namespace TaskSample
             //Method1();
             //Method2();
             await Method1Async();
+            Console.WriteLine($"Delay Main after method 1... Thread ID = {Environment.CurrentManagedThreadId}");
             await Method2Async();
+            Console.WriteLine($"Delay Main after method 2... Thread ID = {Environment.CurrentManagedThreadId}");
             stopwatch.Stop();
             Console.WriteLine($"Elapsed {stopwatch.Elapsed}");
+            Console.WriteLine($"Delay Main after all... Thread ID = {Environment.CurrentManagedThreadId}");
         }
 
         static void Method1()
