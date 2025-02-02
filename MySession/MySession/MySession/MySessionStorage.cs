@@ -29,7 +29,6 @@ namespace MySession.MySession
             {
                 return sessions[id];
             }
-
             return Create();
         }
     }
