@@ -1,0 +1,19 @@
+﻿@model User
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Success</title>
+
+    <!-- Tự động chuyển hướng sau 5 giây -->
+    <meta http-equiv="refresh" content="5;url=@ViewBag.RedirectUri" />
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Login Success Page</h1>
+        <p>Welcome, @Model.Username</p>
+    </div>
+</body>
+</html>
