@@ -402,6 +402,7 @@ FodyWeavers.xsd
 *.pdf
 *.epub
 
+LoginGoogleDemo/
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
