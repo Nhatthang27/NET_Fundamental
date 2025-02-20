@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.WebApp.Identity.Cookie", "Auth.WebApp.Identity.Cookie\Auth.WebApp.Identity.Cookie.csproj", "{9EF30A5A-A8B5-4520-8D44-81E06F171E76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.WebApp.Custom.Cookie", "Auth.WebApp.Custom.Cookie\Auth.WebApp.Custom.Cookie.csproj", "{3153F0E5-E516-478D-9914-B515730D8C74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.WebApi.Custom.JWT", "Auth.WebApi.Custom.JWT\Auth.WebApi.Custom.JWT.csproj", "{FD5A7B05-6F68-45B3-B95C-30DBB192D6FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EF30A5A-A8B5-4520-8D44-81E06F171E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF30A5A-A8B5-4520-8D44-81E06F171E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF30A5A-A8B5-4520-8D44-81E06F171E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF30A5A-A8B5-4520-8D44-81E06F171E76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3153F0E5-E516-478D-9914-B515730D8C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3153F0E5-E516-478D-9914-B515730D8C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3153F0E5-E516-478D-9914-B515730D8C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3153F0E5-E516-478D-9914-B515730D8C74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD5A7B05-6F68-45B3-B95C-30DBB192D6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5A7B05-6F68-45B3-B95C-30DBB192D6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5A7B05-6F68-45B3-B95C-30DBB192D6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5A7B05-6F68-45B3-B95C-30DBB192D6FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

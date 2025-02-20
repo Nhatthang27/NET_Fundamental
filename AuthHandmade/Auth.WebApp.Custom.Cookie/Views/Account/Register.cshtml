@@ -1,0 +1,27 @@
+﻿@model RegisterViewModel
+
+<h2>Register</h2>
+<a asp-action="Index" asp-controller="Home">Back to Home</a>
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <p>@error.ErrorMessage</p>
+        }
+    </div>
+}
+
+<form asp-action="Register" method="post">
+    <input asp-for="FullName" placeholder="Full Name" required />
+    <span asp-validation-for="FullName" class="text-danger"></span>
+
+    <input asp-for="Email" placeholder="Email" required />
+    <span asp-validation-for="Email" class="text-danger"></span>
+
+    <input asp-for="Password" placeholder="Password" required />
+    <span asp-validation-for="Password" class="text-danger"></span>
+
+    <input asp-for="ConfirmPassword" placeholder="Confirm Password" required />
+    <button type="submit">Register</button>
+</form>

@@ -1,0 +1,6 @@
+@Auth.WebApi.Custom.JWT_HostAddress = http://localhost:5240
+
+GET {{Auth.WebApi.Custom.JWT_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
